@@ -3,7 +3,6 @@ run:
 	deno run --allow-read --allow-net --allow-run server.ts
 
 clear:
-	# rm invoices
 	rm invoices.exe
 	cd ui && rm -rf dist/
 
@@ -17,7 +16,7 @@ build-frontend:
 	cd ui && npm run build
 
 archive:
-	zip invoices invoices.exe ui/dist/** ui/dist/**/*
+	zip -r invoices invoices.exe start.bat ui/dist/** ui/dist/**/*
 
 build: build-frontend compile-win archive
 	@echo "Build success!"
