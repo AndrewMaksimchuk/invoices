@@ -1,6 +1,6 @@
-import { Application, Router } from "https://deno.land/x/oak@v10.5.1/mod.ts";
-// @deno-types="https://cdn.sheetjs.com/xlsx-0.18.7/package/types/index.d.ts"
-import * as XLSX from "https://cdn.sheetjs.com/xlsx-0.18.7/package/xlsx.mjs";
+import { Application, Router } from "https://deno.land/x/oak@v17.1.0/mod.ts";
+// @deno-types="https://cdn.sheetjs.com/xlsx-0.20.3/package/types/index.d.ts"
+import * as XLSX from "https://cdn.sheetjs.com/xlsx-0.20.3/package/xlsx.mjs";
 
 const PORT = 8000;
 
